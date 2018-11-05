@@ -1,0 +1,30 @@
+.backdrop {
+  background: url('/assets/img/daniel-olahh.jpg') center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 0 0;
+  position: relative;
+}
+
+.backdrop::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.50);
+  /*z-index: 9;*/
+}
+
+.description, .title {
+  color: #fff2e7 !important;
+  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.title h2{
+  font-size: 25px;
+}

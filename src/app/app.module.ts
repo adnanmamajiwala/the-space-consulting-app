@@ -9,6 +9,9 @@ import {FooterComponent} from './home/footer/footer.component';
 import {SmoothScrollDirective} from './home/shared/smooth-scroll.directive';
 import {CarouselComponent} from './home/carousel/carousel.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
+import { OurServicesComponent } from './home/our-services/our-services.component';
+import { OurTeamComponent } from './home/our-team/our-team.component';
+import { ConnectWithUsComponent } from './home/connect-with-us/connect-with-us.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { AboutUsComponent } from './home/about-us/about-us.component';
     FooterComponent,
     SmoothScrollDirective,
     CarouselComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    OurServicesComponent,
+    OurTeamComponent,
+    ConnectWithUsComponent
   ],
   imports: [
     BrowserModule,

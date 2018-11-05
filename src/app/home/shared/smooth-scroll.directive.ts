@@ -12,7 +12,7 @@ export class SmoothScrollDirective {
 
   @HostListener('click', ['$event'])
   onClick(e) {
-    const selectRootElement: Element = this.renderer.selectRootElement(this.scrollTo);
+    const selectRootElement: Element = this.renderer.selectRootElement(this.scrollTo, true);
     selectRootElement.scrollIntoView({behavior: 'smooth', block: 'center'});
   }
 }

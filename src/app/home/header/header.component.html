@@ -3,8 +3,9 @@
     <div class="navbar-translate">
       <a class="navbar-brand" href="/">The Space Consulting</a>
 
-      <button class="navbar-toggler"
-              (click)="isNavbarCollapsed = !isNavbarCollapsed"
+      <button #toggleButton
+              class="navbar-toggler"
+              (click)="sidebarToggle()"
               type="button"
               aria-controls="navbarToggler"
               [attr.aria-expanded]="!isNavbarCollapsed"
@@ -16,20 +17,35 @@
       </button>
     </div>
 
-    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarToggler">
+    <div [ngbCollapse]="!isNavbarCollapsed" class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="Home" appSmoothScroll scrollTo="app-carousel">
+          <a class="nav-link"
+             rel="tooltip"
+             title="Home"
+             appSmoothScroll
+             scrollTo="app-carousel"
+             (click)="sidebarToggle()">
             <p>Home</p>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="About Us" appSmoothScroll scrollTo="app-about-us">
+          <a class="nav-link"
+             rel="tooltip"
+             title="About Us"
+             appSmoothScroll
+             scrollTo="app-about-us"
+             (click)="sidebarToggle()">
             <p>About Us</p>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" rel="tooltip" title="Services" appSmoothScroll scrollTo="app-our-services">
+          <a class="nav-link"
+             rel="tooltip"
+             title="Services"
+             appSmoothScroll
+             scrollTo="app-our-services"
+             (click)="sidebarToggle()">
             <p>Service</p>
           </a>
         </li>
